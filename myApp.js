@@ -13,7 +13,8 @@ let Person = mongoose.model("Person", personSchema)
 mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const createAndSavePerson = (done) => {
-  const document = new Person({name:'alex', age:36, favoriteFoods:['meat', 'egs']},(error, document)=>{
+  const document = new Person({name:'alex', age:36, favoriteFoods:['meat', 'egs']})
+  document.save((error, document)=>{
     if(error){
       return done(error)
     }
