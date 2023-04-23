@@ -5,7 +5,7 @@ mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 const personSchema = new mongoose.Schema({
   name:{type:String, required: true},
   age: Number,
-  favoriteFood:{type: []}
+  favoriteFood: [String]
 })
 let Person = mongoose.model('Person', personSchema)
 
