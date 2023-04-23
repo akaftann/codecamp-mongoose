@@ -2,6 +2,9 @@
   "name": "fcc-mongo-mongoose-challenges",
   "version": "0.0.1",
   "description": "A boilerplate project",
+  "engines": {
+    "node": ">=14.20.1 <15"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
